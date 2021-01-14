@@ -1,0 +1,12 @@
+<svg width="44" height="77" viewBox="0 0 44 77">
+  <g id="Scroll-btn" transform="translate(-294 -712)">
+    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(304 721)" fill="#fff" stroke="#707070" stroke-width="1">
+      <circle cx="12.5" cy="12.5" r="12.5" stroke="none"/>
+      <circle cx="12.5" cy="12.5" r="12" fill="none"/>
+    </g>
+    <g id="Path_2" data-name="Path 2" transform="translate(294 712)" fill="none">
+      <path d="M22,0A22,22,0,0,1,44,22V55A22,22,0,0,1,0,55V22A22,22,0,0,1,22,0Z" stroke="none"/>
+      <path d="M 22 6 C 13.17756652832031 6 6 13.17756652832031 6 22 L 6 55 C 6 63.82243347167969 13.17756652832031 71 22 71 C 30.82243347167969 71 38 63.82243347167969 38 55 L 38 22 C 38 13.17756652832031 30.82243347167969 6 22 6 M 22 0 C 34.1502685546875 0 44 9.8497314453125 44 22 L 44 55 C 44 67.1502685546875 34.1502685546875 77 22 77 C 9.8497314453125 77 0 67.1502685546875 0 55 L 0 22 C 0 9.8497314453125 9.8497314453125 0 22 0 Z" stroke="none" fill="#fff"/>
+    </g>
+  </g>
+</svg>
