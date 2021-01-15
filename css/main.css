@@ -4,7 +4,7 @@
 body {
   height: 100vh;
   margin: 0;
-  font-family: 'Poppins', Arial;
+  font-family: "Poppins", Arial;
 }
 
 ul {
@@ -22,7 +22,7 @@ image {
 }
 
 .nav-container {
-  background-color: #6700ee;
+  background-color: #204051;
 }
 
 .nav-container a {
@@ -55,12 +55,13 @@ header ul a {
   padding: 0 1em;
 }
 
-.social-header, .hero-design {
+.social-header,
+.hero-design {
   display: none;
 }
 
 .hero {
-  background-color: #6e00ff;
+  background-color: #3b6978;
   color: white;
   display: -ms-grid;
   display: grid;
@@ -74,7 +75,7 @@ header ul a {
   display: flex;
   margin: 0 auto;
   width: 200px;
-  color: #ff64cb;
+  color: #0bf7ff;
 }
 
 .meet span {
@@ -97,15 +98,15 @@ section {
 }
 
 .featured::before {
-  content: '';
+  content: "";
+  background: url(../images/featured-watermark.svg) no-repeat;
+  -webkit-transform: translate(-110px, -70px) scale(0.8);
+          transform: translate(-110px, -70px) scale(0.8);
   position: absolute;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background-color: #e5d5fa;
-  top: 0;
-  left: 0;
-  z-index: -1;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
 }
 
 .left img {
@@ -115,9 +116,9 @@ section {
 .subtitle {
   text-transform: uppercase;
   font-weight: bold;
-  color: #6e00ff;
-  letter-spacing: .2em;
-  font-size: .85em;
+  color: #3b6978;
+  letter-spacing: 0.2em;
+  font-size: 0.85em;
 }
 
 .featured-title {
@@ -131,13 +132,13 @@ section {
 .featured-desc {
   color: #3b3b3b;
   margin-top: 3em;
-  font-size: .9em;
+  font-size: 0.9em;
   line-height: 1.8em;
   font-weight: 500;
 }
 
 .skills {
-  background-color: #ff64cb;
+  background-color: #84a9ac;
 }
 
 .skills-container ul li {
@@ -185,16 +186,19 @@ section {
 }
 
 @media only screen and (min-width: 800px) {
-  .featured, .portfolio {
+  .featured,
+  .portfolio {
     text-align: left;
   }
-  .featured, .portfolio-container {
+  .featured,
+  .portfolio-container {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 40% auto;
         grid-template-columns: 40% auto;
   }
-  .left, .portfolio-left {
+  .left,
+  .portfolio-left {
     display: -ms-grid;
     display: grid;
     place-content: center;
@@ -236,7 +240,7 @@ section {
     background: unset;
   }
   .nav-container header {
-    background-color: #6700ee;
+    background-color: #204051;
   }
   header {
     padding: 2em 2em 2em 4em;
@@ -272,7 +276,7 @@ section {
     padding: 0;
   }
   .hero .content {
-    background: #6e00ff;
+    background: #3b6978;
     padding: 6em 8em 6em 4em;
     text-align: left;
   }
@@ -283,12 +287,12 @@ section {
   .meet {
     margin: unset;
   }
-  .hero-design {
-    display: unset;
-    margin-left: -50%;
-    margin-top: 15%;
-    width: 100%;
-  }
+  /*    .hero-design {
+        display: unset;
+        margin-left: -50%;
+        margin-top: 15%;
+        width: 100%;
+    } */
   .portfolio left {
     float: right;
     max-width: 500px;

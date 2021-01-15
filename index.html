@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>Preeti Kharb— Portfolio</title>
   <link rel="stylesheet" href="css/main.css" />
 </head>
 
@@ -140,7 +140,7 @@
     </div>
   </section>
   <section class="portfolio">
-    <div class="portfolio-container">
+    <div class="portfolio-container transition3">
       <div class="portfolio-left">
         <div class="inner">
           <p class="subtitle">App 1</p>
@@ -150,7 +150,7 @@
       </div>
       <a href="#"><img src="images/project1.png" alt="App1"></a>
     </div>
-    <div class="portfolio-container">
+    <div class="portfolio-container transition3">
       <div class="portfolio-left">
         <div class="inner">
           <p class="subtitle">App 2</p>
@@ -160,7 +160,7 @@
       </div>
       <a href="#"><img src="images/project1.png" alt="App2"></a>
     </div>
-    <div class="portfolio-container">
+    <div class="portfolio-container transition3">
       <div class="portfolio-left">
         <div class="inner">
           <p class="subtitle">App 3</p>
@@ -198,17 +198,40 @@
       ease: Power4.easeOut
     }, "-=1.5")
 
-    tl.from(".hero-design", {
-      opacity: 0, y: 50, duration: 1,
-      ease: Power4.easeOut
-    }, "-=2")
+    /*     tl.from(".hero-design", {
+          opacity: 0, y: 50, duration: 1,
+          ease: Power4.easeOut
+        }, "-=2")
+    
+    
+        gsap.from(".square-anim", {
+          stagger: 0.2,
+          scale: 0.1,
+          duration: 1,
+          ease: Back.easeOut.config(1)
+        }) */
+
+    gsap.from(".transition2", {
+      ScrollTrigger: {
+        trigger: '.transition2',
+        start: 'top bottom'
+      },
+      stagger: 0.3,
+      y: 50,
+      duration: 1.2,
+      opacity: 0
+    })
 
 
-    gsap.from("square-anim", {
-      stagger: 0.2,
-      scale: 0.1,
-      duration: 1,
-      ease: Back.easeOut.config(1.7)
+    gsap.from(".transition3", {
+      ScrollTrigger: {
+        trigger: '.transition3',
+        start: 'top center'
+      },
+      stagger: 0.6,
+      y: 50,
+      duration: 1.2,
+      opacity: 0
     })
 
 
